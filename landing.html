@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="page-enter" content="blendTrans(duration=0.3)">
+    <meta http-equiv="page-exit" content="blendTrans(duration=0.3)">
+    <title>My Portfolio</title>
+    <!-- font awesome 6.3.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom -->
+    <link rel="stylesheet" type="text/css" href="/asset/css/landing.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navBar">
+            <a href="#" class="logo">jun</a>
+            <div class="nav-links">
+                <ul>
+                    <li class="active"><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">project</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars menu-hamburger"></i>
+        </nav>
+        <div class="wrapper">
+            <div class="cols">
+                <span class="topLine">web developer</span>
+                <h1>안녕하세요 <span class="multiText"></span><br>웹 개발자 이준용 입니다.</h1>
+            </div>
+        </div>
+        <!-- About Section -->
+        <section id="about">
+            <div class="about">
+                <h1><span>about me</span></h1>
+                <div class="modile-profile"></div>
+                <div class="content">
+                    <div class="photo">
+                    </div>
+                    <div class="about_txt">
+                        <p class="work">Web developer</p>
+                        <p class="keywords">#도전하는 #포기하지않는 #활발한</p>
+                        <p class="me">
+                            안녕하세요.이준용입니다.<br>
+                            항상 새로움에 도전하여 멈춰있지 않고 성장해 나가는<br>
+                            웹 개발자가 되고 싶습니다.
+                        </p>
+                        <p class="contens">
+                            23.01 | 빅데이터 분석 전문가 양성과정 이수 ( 22.06 - 23.01 )<br>
+                            23.02 | 신구대학교 정보미디어학부 소프트웨어과 졸업<br>
+                            22.12 | 일본IT 융합 전문가 연수중 ( 22.12 - 23.06 )<br> 
+                        </p>
+                        <br>
+                        <div class="tool">
+                            <h2>Tool</h2>
+                            <ul class="front">
+                                <li>Figma</li>
+                                <li>AdobeXd</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                                <li>jQuery</li>
+                            </ul>
+                            <ul class="back">
+                                <li>PHP</li>
+                                <li>JSP</li>
+                                <li>Spring</li>
+                                <li>Django</li>
+                                <li>Java</li>
+                                <li>Python</li>
+                                <li>AWS</li>
+                            </ul>
+                        </div>
+                        <div class="info">
+                            <a href="#" class="link">이력서 (Notion)</a>
+                            <a href="#" class="git">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- // About Section -->
+
+        <!-- Project Section -->
+        <section id="project">
+            <div class="project">
+                <h1 class="h1"><span>project</span></h1>
+                <div class="web web1">
+                    <div class="content-left">
+                        <h1>01 Web</h1>
+                        <dl>
+                            <dt>프로젝트명</dt>
+                            <dd class="tit">tasty</dd>
+                            <dt>프로젝트 구성</dt>
+                            <dd>반응형웹 + 클로스브라우징 main+sub(소개/상품리스트)</dd>
+                            <dt>프로젝트 참여도</dt>
+                            <dd>60% (3인 프로젝트)</dd>
+                            <dt>Tool</dt>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript & jQuery</li>
+                                <li>PHP</li>
+                                <li>MariaDB</li>
+                            </ul>
+                            <dt>프로젝트 소개</dt>
+                            <dd>다양한 요리 레시피를 볼 수 있으며,<br>자신의 레시피를 직접 공유 할 수 있는 요리 커뮤니티 사이트</dd>
+                        </dl>
+                        <div class="link">
+                            <a href="#" target="_blank" class="pdf">PDF</a>
+                            <a href="#" target="_blank" class="figma">Figma</a>
+                            <a href="#" target="_blank" class="project-git">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img img1"><img src="/asset/img/project1.jpg" alt=""></div>
+                </div>
+            </div>
+
+        </section>
+        <!-- // Project Section -->
+    </div>
+        <!-- type.js -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            /* hambuger menu */
+            const menuHamburger = document.querySelector('.menu-hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            const cols = document.querySelector('.cols');
+
+            menuHamburger.addEventListener('click', () => {
+                menuHamburger.classList.toggle('mobile-hamburger');
+                navLinks.classList.toggle('mobile-menu');
+                cols.classList.toggle('remove-introduce');
+            })
+            /* multiText */
+            var typingEffect = new Typed('.multiText',{
+                strings : ["새로움에 도전하는", "포기하지 않는"],
+                loop : true,
+                typeSpeed : 80,
+                backSpeed : 60,
+                backDelay : 1500
+            })
+        </script>
+</body>
+</html>

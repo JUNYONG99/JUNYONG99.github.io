@@ -1,0 +1,497 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300,400,500,600,700,800,900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.container {
+    width: 100%; 
+    min-height: 100vh; 
+    background-color: #fff;
+}
+/* navBar */
+.navBar {
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.navBar a {
+    color: #3d535f;
+    
+}
+.navBar .logo {
+    display: flex;
+    font-size: 2.5em;
+    font-weight: 800;
+    letter-spacing: 3px; 
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.navBar .nav-links ul {
+    display: flex;
+}
+.navBar .nav-links ul li {
+    margin: 0 25px;
+}
+.navBar .nav-links ul li a {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 6px 15px;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+}
+.navBar i {
+    font-size: 2em;
+    display: none;
+}
+.navBar .nav-links ul li a:hover,
+.navBar .nav-links ul li.active a
+{
+    color: #7f00ff;
+}
+/* //navBar */
+
+/* introduce */
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 80px);
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+.wrapper::before {
+    position: absolute;
+    content: '';
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    left: -12%;
+    top: 40%;
+    background: linear-gradient(45deg, #7f00ff, pink);
+    animation: object1 6s linear infinite;
+}
+.wrapper::after {
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    left: 35%;
+    top: 12%;
+    background: linear-gradient(45deg, #7f00ff, pink);
+    animation: object2 6s linear infinite;
+}
+@keyframes object1 {
+    50%{
+        left: -13%;
+        top: 41%;
+    }
+}
+@keyframes object2 {
+    50%{
+        left: 35%;
+        top: 10%;
+    }
+}
+.topLine {
+    display: block;
+    position: relative;
+    font-size: 45px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #3d535f;
+}
+.topLine::after {
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #7f00ff;
+}
+.wrapper .cols h1 {
+    display: block;
+    position: absolute;
+    font-size: 3em;
+    font-weight: 900;
+    color:#3d535f;
+}
+.multiText {
+    color: #7f00ff;
+    width: 100%;
+}
+/* //introduce */
+
+/* About Section */
+.about {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+.about h1 {
+    padding: 150px 0;
+    font-size: 3em;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+}
+.about h1 span {
+    padding: 0 5px 0 5px;
+    color: #7f00ff;
+    text-transform: capitalize;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about .content .photo {
+    width: 450px;
+    height: 550px;
+    margin-right: 100px;
+    overflow: hidden;
+    background-image: url(/asset/img/image_1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#about .content .about_txt .work {
+    display: flex;
+    font-size: 2.5em;
+    padding-bottom: 10px;
+    text-transform: capitalize
+}
+#about .content .about_txt .keywords {
+    display: flex;
+    color: #7f00ff;
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
+#about .content .about_txt .me {
+    font-size: 1.5em;
+    line-height: 36px;
+    padding-bottom: 10px;
+}
+#about .content .about_txt .contens {
+    font-size: 1.3em;
+    padding-bottom: 10px;
+}
+#about .content .about_txt .tool {
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
+#about .content .about_txt a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about .content .about_txt .tool h2 {
+    color: #7f00ff;
+    margin-bottom: 5px;
+}
+#about .content .about_txt .tool ul {
+    display: flex;
+}
+#about .content .about_txt .tool ul li{
+    margin: 10px 5px;
+    border: 1px solid #333;
+    color: #333;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;;
+}
+#about .content .about_txt .link {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #7f00ff;
+    border-radius: 10px;
+    color: #7f00ff;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+#about .content .about_txt .link:hover {
+    background-color: #7f00ff;
+    color: #fff;
+    transition: 0.5s;
+}
+#about .content .about_txt .git {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #3d535f;
+    border-radius: 10px;
+    color: #3d535f;
+    font-size: 1.2em;
+    margin: 10px 0 0 20px;
+}
+#about .content .about_txt .git:hover {
+    background-color: #3d535f;
+    color: #fff;
+    transition: 0.5s;
+}
+#about .content .about_txt .info {
+    display: flex;
+}
+/* // About Section */
+
+/* Project Section */
+#project .project {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    color: #333;
+}
+#project .project h1 {
+    padding: 90px 0;
+    font-size: 3em;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+}
+#project .project h1 span {
+    padding: 0 5px 0 5px;
+    color: #7f00ff;
+    text-transform: capitalize;
+}
+#project .project .web {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#project .project .web h1 {
+    font-size: 1.8em;
+    color: #7f00ff;
+    padding-bottom: 10px;
+    text-align: left;
+}
+#project .project .web .content-left .tit {
+    font-size: 2rem;
+    font-weight: 600;
+    /* color: #F8733F; */
+    text-transform: capitalize;
+    padding-bottom: px;
+}
+#project .project .web .content-left dt {
+    font-size: 1.2em;
+    font-weight: 700;
+    padding-bottom: 3px;
+}
+#project .project .web .content-left dd {
+    padding-bottom: 20px;
+}
+
+#project .project .web .content-left ul {
+    display: flex;
+    padding-bottom: 10px;
+}
+#project .project .web .content-left ul li{
+    margin: 10px 5px;
+    border: 1px solid #333;
+    color: #333;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;;
+}
+#project .project .web .content-left .link {
+    display: flex;
+}
+#project .project .web .content-left .link a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 50px;
+    font-size: 1em;
+    margin: 20px 5px;
+    border: 1px solid #7f00ff;
+    color: #7f00ff;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+}
+#project .project .web .content-left .link a:hover {
+    background-color: #7f00ff;
+    color: #fff;
+    transition: 0.5s;
+}
+#project .project .web .content-left .link .pdf {
+    border: 1px solid red;
+    color: red;
+}
+#project .project .web .content-left .link .pdf:hover {
+    background-color: red;
+    color: #fff;
+    transition: 0.5s;
+}
+#project .project .web .content-left .link .project-git {
+    border: 1px solid #3d535f;
+    color: #3d535f;
+}
+#project .project .web .content-left .link .project-git:hover {
+    background-color: #3d535f;
+    color: #fff;
+    transition: 0.5s;
+}
+#project .project .web .img {
+    padding-left: 20px;
+}
+
+/*
+#project .project .web .img > img {
+    width: 900px;
+}
+*/
+/* // Project Section */
+/* responsive */
+@media screen and (max-width: 1200px) {
+    .navBar i {
+        font-size: 2em;
+        display: block;
+        pointer-events: click;
+        cursor: pointer;
+        z-index: 10;
+    }
+    .mobile-hamburger {
+        transition: all 0.5s ease;
+        color: #f3f5f8;
+    }
+    .nav-links {
+        top: 0;
+        left: 0;
+        position: absolute;
+        /* background-color: rgba(255, 255, 255, 0.20); */
+        /* background-filter: blur(3px); */
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu {
+        margin-left: 0;
+        background-color: #333;
+        z-index: 5;
+    }
+    .mobile-menu ul li a{
+        color: #fff
+    }
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navBar .nav-links ul li {
+        margin: 25px 0;
+    }
+    .navBar .nav-links ul li a {
+        font-size: 1.5em;
+    }
+    .cols {
+        padding-right: 70px;
+    }
+    .topLine {
+        font-size: 1.8em;
+    }
+    .wrapper .cols h1 {
+        font-size: 1.8em;
+    }
+    /* About Section */
+    #about .about .modile-profile {
+        width: 440px;
+        height: 550px;
+        margin: auto;
+        overflow: hidden;
+        background-image: url(/asset/img/image_1.png);
+        background-position: center;
+        background-size: cover;
+    }
+    #about .content .photo {
+        display: none;
+    }
+    #about .content .about_txt .work {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        padding: 10px 0 10px 0;
+        text-transform: capitalize
+    }
+    #about .content .about_txt .keywords {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #7f00ff;
+        font-size: 1.2em;
+        padding-bottom: 10px;
+    }
+    #about .content .about_txt .me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+        line-height: 36px;
+        padding-bottom: 10px;
+    }
+    #about .content .about_txt .contens {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        font-size: 1.05em;
+        padding-bottom: 10px;
+    }
+    #about .content .about_txt .tool {
+        font-size: 0.8em;
+        padding-bottom: 10px;
+    }
+    #about .content .about_txt .tool h2 {
+        color: #7f00ff;
+        margin: 0 0 5px 10px;
+    }
+    #about .content .about_txt .tool ul {
+        margin-left: 10px;
+    }
+    #about .content .about_txt .tool ul li{
+        border-radius: 6px;
+    }
+    #about .content .about_txt .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #about .content .about_txt .link {
+        width: 180px;
+        height: 50px;
+        border: 1px solid #7f00ff;
+        border-radius: 10px;
+        color: #7f00ff;
+        font-size: 1em;
+        margin-top: 10px;
+    }
+    #about .content .about_txt .git {
+        width: 180px;
+        height: 50px;
+        border: 1px solid #3d535f;
+        border-radius: 10px;
+        color: #3d535f;
+        font-size: 1em;
+        margin: 10px 0 0 20px;
+    }
+    /* Project Section */
+    #project .project .h1 {
+        padding: 400px 0;
+    }
+}
