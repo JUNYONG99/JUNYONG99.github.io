@@ -46,14 +46,20 @@
     letter-spacing: 3px;
     text-transform: capitalize;
 }
-.navBar i {
+.navBar .sns i {
+    font-size: 28px;
+    margin-left: 15px;
+}
+.navBar .menu-hamburger {
     font-size: 2em;
     display: none;
 }
 .navBar .nav-links ul li a:hover,
+.navBar .sns i:hover,
 .navBar .nav-links ul li.active a
 {
-    color: #7f00ff;
+    color: #A435F0;
+    transition: 0.3s;
 }
 /* //navBar */
 
@@ -75,7 +81,7 @@
     border-radius: 50%;
     left: -12%;
     top: 40%;
-    background: linear-gradient(45deg, #7f00ff, pink);
+    background: linear-gradient(45deg, #A435F0, pink);
     animation: object1 6s linear infinite;
 }
 .wrapper::after {
@@ -86,7 +92,7 @@
     border-radius: 50%;
     left: 35%;
     top: 12%;
-    background: linear-gradient(45deg, #7f00ff, pink);
+    background: linear-gradient(45deg, #A435F0, pink);
     animation: object2 6s linear infinite;
 }
 @keyframes object1 {
@@ -115,7 +121,7 @@
     height: 4px;
     width: 45px;
     bottom: 10px;
-    background-color: #7f00ff;
+    background-color: #A435F0;
 }
 .wrapper .cols h1 {
     display: block;
@@ -125,7 +131,7 @@
     color:#3d535f;
 }
 .multiText {
-    color: #7f00ff;
+    color: #A435F0;
     width: 100%;
 }
 /* //introduce */
@@ -134,13 +140,12 @@
 .about {
     display: block;
     width: 100%;
-    height: 100vh;
     justify-content: center;
     align-items: center;
     color: #333;
 }
 .about h1 {
-    padding: 150px 0;
+    padding: 150px 0 150px 0;
     font-size: 3em;
     font-weight: 600;
     display: block;
@@ -149,7 +154,7 @@
 }
 .about h1 span {
     padding: 0 5px 0 5px;
-    color: #7f00ff;
+    color: #A435F0;
     text-transform: capitalize;
 }
 .content {
@@ -175,7 +180,7 @@
 }
 #about .content .about_txt .keywords {
     display: flex;
-    color: #7f00ff;
+    color: #A435F0;
     font-size: 1.2em;
     padding-bottom: 10px;
 }
@@ -198,7 +203,7 @@
     align-items: center;
 }
 #about .content .about_txt .tool h2 {
-    color: #7f00ff;
+    color: #A435F0;
     margin-bottom: 5px;
 }
 #about .content .about_txt .tool ul {
@@ -215,14 +220,14 @@
     display: flex;
     width: 200px;
     height: 50px;
-    border: 1px solid #7f00ff;
+    border: 1px solid #A435F0;
     border-radius: 10px;
-    color: #7f00ff;
+    color: #A435F0;
     font-size: 1.2em;
     margin-top: 10px;
 }
 #about .content .about_txt .link:hover {
-    background-color: #7f00ff;
+    background-color: #A435F0;
     color: #fff;
     transition: 0.5s;
 }
@@ -265,7 +270,7 @@
 }
 #project .project h1 span {
     padding: 0 5px 0 5px;
-    color: #7f00ff;
+    color: #A435F0;
     text-transform: capitalize;
 }
 #project .project .web {
@@ -275,10 +280,11 @@
 }
 #project .project .web h1 {
     font-size: 1.8em;
-    color: #7f00ff;
+    color: #A435F0;
     padding-bottom: 10px;
     text-align: left;
 }
+
 #project .project .web .content-left .tit {
     font-size: 2rem;
     font-weight: 600;
@@ -317,13 +323,13 @@
     height: 50px;
     font-size: 1em;
     margin: 20px 5px;
-    border: 1px solid #7f00ff;
-    color: #7f00ff;
+    border: 1px solid #A435F0;
+    color: #A435F0;
     border-radius: 10px;
     padding: 5px 10px 5px 10px;
 }
 #project .project .web .content-left .link a:hover {
-    background-color: #7f00ff;
+    background-color: #A435F0;
     color: #fff;
     transition: 0.5s;
 }
@@ -358,12 +364,15 @@
 /* // Project Section */
 /* responsive */
 @media screen and (max-width: 1200px) {
-    .navBar i {
+    .navBar .menu-hamburger {
         font-size: 2em;
         display: block;
         pointer-events: click;
         cursor: pointer;
         z-index: 10;
+    }
+    .navBar .sns i{
+        display: none;
     }
     .mobile-hamburger {
         transition: all 0.5s ease;
@@ -412,6 +421,9 @@
         font-size: 1.8em;
     }
     /* About Section */
+    .about h1 {
+        padding: 150px 0 30px 0;
+     }
     #about .about .modile-profile {
         width: 440px;
         height: 550px;
@@ -436,7 +448,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #7f00ff;
+        color: #A435F0;
         font-size: 1.2em;
         padding-bottom: 10px;
     }
@@ -461,7 +473,7 @@
         padding-bottom: 10px;
     }
     #about .content .about_txt .tool h2 {
-        color: #7f00ff;
+        color: #A435F0;
         margin: 0 0 5px 10px;
     }
     #about .content .about_txt .tool ul {
@@ -478,9 +490,9 @@
     #about .content .about_txt .link {
         width: 180px;
         height: 50px;
-        border: 1px solid #7f00ff;
+        border: 1px solid #A435F0;
         border-radius: 10px;
-        color: #7f00ff;
+        color: #A435F0;
         font-size: 1em;
         margin-top: 10px;
     }
@@ -498,4 +510,68 @@
         /* padding: 400px 0; */
         padding-top: 400px;
     }
+    #project .project .web .img {
+        display: none;
+    }
+    #project .project .moblie-project1 {
+        max-width: 70%;
+        width: 1000px;
+        height: 500px;
+        margin: auto;
+        margin-top: 30px;
+        overflow: hidden;
+        background-image: url(/asset/img/sample.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    #project .project .moblie-project2 {
+        max-width: 70%;
+        width: 1000px;
+        height: 500px;
+        margin: auto;
+        margin-top: 30px;
+        overflow: hidden;
+        background-image: url(/asset/img/sample.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    #project .project .moblie-project3 {
+        max-width: 70%;
+        width: 1000px;
+        height: 500px;
+        margin: auto;
+        margin-top: 30px;
+        overflow: hidden;
+        background-image: url(/asset/img/sample.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    #project .project h1 {
+        margin-top: 50px
+    }
+    #project .project .content-left {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    #project .project .web h1 {
+        font-size: 1.8em;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    #project .project .web .content-left ul {
+        display: block;
+        margin: auto;
+        width: 30%;
+    }
+    #project .project .web .content-left dd {
+        font-size: 0.9em;
+        padding-bottom: 20px;
+    }
+    #project .project .web .content-left .link {
+        display: block;
+        margin-left: 410px;
+    } 
+   
+ 
+   
 }
