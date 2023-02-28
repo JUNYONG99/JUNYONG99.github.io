@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +14,10 @@
     <!-- custom -->
     <link rel="stylesheet" type="text/css" href="/asset/css/landing.css">
 </head>
+
 <body>
     <div class="container">
-       
+
         <nav class="navBar">
             <a href="#" class="logo">jun</a>
             <div class="nav-links">
@@ -39,7 +41,7 @@
             </div>
         </div>
         <!-- About Section -->
-       
+
         <section id="about">
             <div class="about">
                 <h1><span>about me</span></h1>
@@ -58,7 +60,7 @@
                         <p class="contens">
                             23.01 | 빅데이터 분석 전문가 양성과정 이수 ( 22.06 - 23.01 )<br>
                             23.02 | 신구대학교 정보미디어학부 소프트웨어과 졸업<br>
-                            22.12 | 일본IT 융합 전문가 연수중 ( 22.12 - 23.06 )<br> 
+                            22.12 | 일본IT 융합 전문가 연수중 ( 22.12 - 23.06 )<br>
                         </p>
                         <br>
                         <div class="tool">
@@ -89,7 +91,7 @@
                 </div>
             </div>
         </section>
-   
+
         <!-- // About Section -->
 
         <!-- Project Section -->
@@ -186,38 +188,49 @@
                     </div>
                     <div class="img img1"><img src="/asset/img/sample.jpg" alt=""></div>
                 </div>
+                <footer class="footer">
+                    <div class="footer__copyright__text">
+                        <p>Create By LEE JUN YONG
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                        </p>
+                    </div>
+                </footer>
             </div>
         </section>
         <!-- // Project Section -->
-
+        
         <!-- Contact Section-->
-        <section id="contact">
+       
+        <!-- // Contact Section-->
 
-        </section>
-         <!-- // Contact Section-->
     </div>
+   
 
-        <!-- type.js -->
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <script>
-            /* hambuger menu */
-            const menuHamburger = document.querySelector('.menu-hamburger');
-            const navLinks = document.querySelector('.nav-links');
-            const cols = document.querySelector('.cols');
 
-            menuHamburger.addEventListener('click', () => {
-                menuHamburger.classList.toggle('mobile-hamburger');
-                navLinks.classList.toggle('mobile-menu');
-                cols.classList.toggle('remove-introduce');
-            })
-            /* multiText */
-            var typingEffect = new Typed('.multiText',{
-                strings : ["새로움에 도전하는", "포기하지 않는"],
-                loop : true,
-                typeSpeed : 80,
-                backSpeed : 60,
-                backDelay : 1500
-            })
-        </script>
+    <!-- type.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        /* hambuger menu */
+        const menuHamburger = document.querySelector('.menu-hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        const cols = document.querySelector('.cols');
+
+        menuHamburger.addEventListener('click', () => {
+            menuHamburger.classList.toggle('mobile-hamburger');
+            navLinks.classList.toggle('mobile-menu');
+            cols.classList.toggle('remove-introduce');
+        })
+        /* multiText */
+        var typingEffect = new Typed('.multiText', {
+            strings: ["새로움에 도전하는", "포기하지 않는"],
+            loop: true,
+            typeSpeed: 80,
+            backSpeed: 60,
+            backDelay: 1500
+        })
+    </script>
 </body>
+
 </html>

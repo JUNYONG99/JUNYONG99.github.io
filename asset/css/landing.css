@@ -355,7 +355,13 @@
     padding-left: 20px;
     margin-top: 300px;
 }
-
+.footer__copyright__text {
+    margin-top: 100px;
+    padding: 100px 0 100px 0;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
 /*
 #project .project .web .img > img {
     width: 900px;
