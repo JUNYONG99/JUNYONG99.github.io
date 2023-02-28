@@ -508,7 +508,7 @@
     /* Project Section */
     #project .project .h1 {
         /* padding: 400px 0; */
-        padding-top: 400px;
+        padding-top: 100px;
     }
     #project .project .web .img {
         display: none;
