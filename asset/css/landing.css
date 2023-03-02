@@ -40,7 +40,7 @@
     margin: 0 25px;
 }
 .navBar .nav-links ul li a {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     padding: 6px 15px;
     letter-spacing: 3px;
@@ -150,7 +150,6 @@
     font-weight: 600;
     display: block;
     text-align: center;
-    margin-top: 200px;
 }
 .about h1 span {
     padding: 0 5px 0 5px;
@@ -384,18 +383,47 @@
 }
 .footer__copyright__text {
     margin-top: 100px;
-    padding: 100px 0 100px 0;
+    padding: 50px 0 50px 0;
     background: #333;
     color: #fff;
     text-align: center;
 }
-
-/*
-#project .project .web .img > img {
-    width: 900px;
-}
-*/
 /* // Project Section */
+
+/* contact Section */
+.contact .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .content h2 {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-size: 1.8em;
+}
+.contact .address {
+   display: block;
+   text-align: center;
+   margin-top: 20px;
+}
+.contact .address a {
+    text-decoration: none;
+    text-align: center;
+    color: #333;
+    line-height: 40px;
+    font-size: 1.1em;
+}
+.contact .address i {
+    font-size: 1.3em;
+}
+.contact .address p {
+    margin-top: 30px;
+    font-size: 1.1em;
+}
+.contact .contact-img {
+    margin: 80px 0 0 100px;
+}
+/* // contact Section */
 /* responsive */
 @media screen and (max-width: 1580px) {
     .navBar .menu-hamburger {

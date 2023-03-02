@@ -193,6 +193,21 @@
                     </div>
                     <div class="img img3"><img src="/asset/img/project_3.png" alt="" width="780px"></div>
                 </div>
+                <!-- Contact Section-->
+                <div class="contact">
+                    <h1 class="h1"><span>Contact</span></h1>
+                    <div class="content">
+                        <h2>"멈추지 않고 항상 새로움에 도전하여<br> 사용자들에게 새로운 경험을 제공해주는 <br>개발자, 이준용이되겠습니다."</h2>
+                        <div class="contact-img"><img src="/asset/img/sample.jpg" alt="" width="600px" height="300px"></div>
+                    </div>
+                    <br>
+                    <div class="address">
+                        <a href="#" class="copy-text"><i class="fa-solid fa-envelope"></i> aapp76sun@gmail.com </a>&emsp;
+                        <a href="#" class="copy-text"><i class="fa-solid fa-phone"></i> +82 010-7371-6400 </a>
+                        <p><i class="fa-regular fa-clipboard"></i> 클릭시 클립보드에 복사</p>
+                    </div>
+                </div>
+                <!-- // Contact Section-->
                 <!-- footer -->
                 <footer class="footer">
                     <div class="footer__copyright__text">
@@ -232,6 +247,26 @@
             backSpeed: 60,
             backDelay: 1500
         })
+
+        /* copyToClipboard */
+        const copyToClipboard = (text) => {
+            const elem = document.createElement('textarea');
+            elem.value = text;
+            document.body.appendChild(elem);
+            elem.select();
+            document.execCommand('copy');
+            document.body.removeChild(elem);
+            alert("클립보드에 복사되었습니다.")
+          };
+      
+          const copyTextElements = document.querySelectorAll('.copy-text');
+          copyTextElements.forEach((element) => {
+            element.addEventListener('click', (event) => {
+              event.preventDefault();
+              const text = element.textContent.trim();
+              copyToClipboard(text);
+            });
+          });
     </script>
 </body>
 
