@@ -15,17 +15,17 @@
     <link rel="stylesheet" type="text/css" href="/asset/css/landing.css">
 </head>
 
-<body>
+<body class="body">
     <div class="container">
 
         <nav class="navBar">
             <a href="#" class="logo">jun</a>
             <div class="nav-links">
                 <ul>
-                    <li class="active"><a href="#">home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">project</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li class="active mobile"><a href="#">home</a></li>
+                    <li class="depth1 mobile"><a href="#about">about</a></li>
+                    <li class="depth2 mobile"><a href="#project">project</a></li>
+                    <li class="depth3 mobile"><a href="#contact">contact</a></li>
                 </ul>
             </div>
             <div class="sns">
@@ -85,7 +85,8 @@
                         </div>
                         <div class="info">
                             <a href="#" class="link">Resume</a>
-                            <a href="https://eager-curiosity-00e.notion.site/Projects-a63ae3a7ae334c7881b6c93ea0b77daf" class="notion">Notion</a>
+                            <a href="https://eager-curiosity-00e.notion.site/Projects-a63ae3a7ae334c7881b6c93ea0b77daf"
+                                class="notion">Notion</a>
                             <a href="https://github.com/JUNYONG99" class="git">GitHub</a>
                         </div>
                     </div>
@@ -124,8 +125,9 @@
                         </dl>
                         <div class="link">
                             <a href="/asset/pdf/TASTY_JP.pdf" target="_blank" class="pdf">PDF</a>
-                            <a href="https://eager-curiosity-00e.notion.site/Tasty-Flow-Chart-6337c09a4dff4af5972bdee0e1b32567"  class="flow-chart">Flow Chart</a>
-                            <a href="https://github.com/JUNYONG99/TASTY_JP" class="project-git" >GitHub</a>
+                            <a href="https://eager-curiosity-00e.notion.site/Tasty-Flow-Chart-6337c09a4dff4af5972bdee0e1b32567"
+                                class="flow-chart">Flow Chart</a>
+                            <a href="https://github.com/JUNYONG99/TASTY_JP" class="project-git">GitHub</a>
                         </div>
                     </div>
                     <div class="img img1"><img src="/asset/img/project_1.png" alt="" width="780px"></div>
@@ -156,7 +158,8 @@
                         </dl>
                         <div class="link">
                             <a href="/asset/pdf/CampusMarket.pdf" target="_blank" class="pdf">PDF</a>
-                            <a href="https://eager-curiosity-00e.notion.site/CM-Flow-Chart-5a73d12d5ada4aa6a0ddd4cc4b68f26a"  class="flow-chart">Flow Chart</a>
+                            <a href="https://eager-curiosity-00e.notion.site/CM-Flow-Chart-5a73d12d5ada4aa6a0ddd4cc4b68f26a"
+                                class="flow-chart">Flow Chart</a>
                             <a href="https://github.com/JUNYONG99/CampusMarket_JP" class="project-git">GitHub</a>
                         </div>
                     </div>
@@ -187,26 +190,31 @@
                         </dl>
                         <div class="link">
                             <a href="/asset/pdf/Project_LUCY_JP.pdf" class="pdf">PDF</a>
-                            <a href="https://eager-curiosity-00e.notion.site/Lucy-Flow-Chart-2b63c29c0eb44533ad997755baf96613" class="flow-chart">Flow Chart</a>
+                            <a href="https://eager-curiosity-00e.notion.site/Lucy-Flow-Chart-2b63c29c0eb44533ad997755baf96613"
+                                class="flow-chart">Flow Chart</a>
                             <a href="http://3.34.214.117/" class="demo-site">Demo</a>
                         </div>
                     </div>
                     <div class="img img3"><img src="/asset/img/project_3.png" alt="" width="780px"></div>
                 </div>
                 <!-- Contact Section-->
-                <div class="contact">
-                    <h1 class="h1"><span>Contact</span></h1>
-                    <div class="content">
-                        <h2>"멈추지 않고 항상 새로움에 도전하여<br> 사용자들에게 새로운 경험을 제공해주는 <br>개발자, 이준용이되겠습니다."</h2>
-                        <div class="contact-img"><img src="/asset/img/sample.jpg" alt="" width="600px" height="300px"></div>
+                <section id="contact">
+                    <div class="contact">
+                        <h1 class="h1"><span>Contact</span></h1>
+                        <div class="content">
+                            <h2>"멈추지 않고 항상 새로움에 도전하여<br> 사용자들에게 새로운 경험을 제공해주는 <br>개발자, 이준용이되겠습니다."</h2>
+                            <div class="contact-img"><img src="/asset/img/sample.jpg" alt="" width="600px"
+                                    height="300px"></div>
+                        </div>
+                        <br>
+                        <div class="address">
+                            <a href="#" class="copy-text"><i class="fa-solid fa-envelope"></i> aapp76sun@gmail.com
+                            </a>&emsp;
+                            <a href="#" class="copy-text"><i class="fa-solid fa-phone"></i> +82 010-7371-6400 </a>
+                            <p><i class="fa-regular fa-clipboard"></i> 클릭시 클립보드에 복사</p>
+                        </div>
                     </div>
-                    <br>
-                    <div class="address">
-                        <a href="#" class="copy-text"><i class="fa-solid fa-envelope"></i> aapp76sun@gmail.com </a>&emsp;
-                        <a href="#" class="copy-text"><i class="fa-solid fa-phone"></i> +82 010-7371-6400 </a>
-                        <p><i class="fa-regular fa-clipboard"></i> 클릭시 클립보드에 복사</p>
-                    </div>
-                </div>
+                </section>
                 <!-- // Contact Section-->
                 <!-- footer -->
                 <footer class="footer">
@@ -223,22 +231,32 @@
         </section>
         <!-- // Project Section -->
     </div>
-   
-
-
     <!-- type.js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- jQuery 3.6.3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js"
+        integrity="sha512-nO7wgHUoWPYGCNriyGzcFwPSF+bPDOR+NvtOYy2wMcWkrnCNPKBcFEkU80XIN14UVja0Gdnff9EmydyLlOL7mQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- custom js -->
     <script>
         /* hambuger menu */
         const menuHamburger = document.querySelector('.menu-hamburger');
         const navLinks = document.querySelector('.nav-links');
+        const body = document.querySelector('.body');
         const cols = document.querySelector('.cols');
-
+        
         menuHamburger.addEventListener('click', () => {
             menuHamburger.classList.toggle('mobile-hamburger');
             navLinks.classList.toggle('mobile-menu');
+            body.classList.toggle('mobile-body')
             cols.classList.toggle('remove-introduce');
         })
+        navLinks.addEventListener('click', () => {
+            body.classList.remove('mobile-body')
+            navLinks.classList.remove('mobile-menu');
+            menuHamburger.classList.remove('mobile-hamburger');
+        })
+
         /* multiText */
         var typingEffect = new Typed('.multiText', {
             strings: ["새로움에 도전하는", "포기하지 않는"],
@@ -257,17 +275,16 @@
             document.execCommand('copy');
             document.body.removeChild(elem);
             alert("클립보드에 복사되었습니다.")
-          };
-      
-          const copyTextElements = document.querySelectorAll('.copy-text');
-          copyTextElements.forEach((element) => {
+        };
+
+        const copyTextElements = document.querySelectorAll('.copy-text');
+        copyTextElements.forEach((element) => {
             element.addEventListener('click', (event) => {
-              event.preventDefault();
-              const text = element.textContent.trim();
-              copyToClipboard(text);
+                event.preventDefault();
+                const text = element.textContent.trim();
+                copyToClipboard(text);
             });
-          });
+        });
     </script>
 </body>
-
 </html>

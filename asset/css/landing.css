@@ -7,6 +7,9 @@
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+  }
 .container {
     width: 100%; 
     min-height: 100vh; 
@@ -145,7 +148,7 @@
     color: #333;
 }
 .about h1 {
-    padding: 150px 0 220px 0;
+    padding: 150px 0 194px 0;
     font-size: 3.5em;
     font-weight: 600;
     display: block;
@@ -397,7 +400,7 @@
     align-items: center;
 }
 .contact .content h2 {
-    margin-top: 150px;
+    margin-top: 220px;
     margin-bottom: 50px;
     font-size: 1.8em;
 }
@@ -421,11 +424,14 @@
     font-size: 1.1em;
 }
 .contact .contact-img {
-    margin: 80px 0 0 100px;
+    margin: 180px 0 0 100px;
 }
 /* // contact Section */
 /* responsive */
 @media screen and (max-width: 1580px) {
+    .mobile-body {
+        overflow: hidden;
+    }
     .navBar .menu-hamburger {
         font-size: 2em;
         display: block;
