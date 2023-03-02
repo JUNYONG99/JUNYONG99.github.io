@@ -145,8 +145,8 @@
     color: #333;
 }
 .about h1 {
-    padding: 150px 0 150px 0;
-    font-size: 3em;
+    padding: 150px 0 220px 0;
+    font-size: 3.5em;
     font-weight: 600;
     display: block;
     text-align: center;
@@ -211,7 +211,7 @@
 }
 #about .content .about_txt .tool ul li{
     margin: 10px 5px;
-    border: 1px solid #333;
+    border: 1px solid #A435F0;
     color: #333;
     border-radius: 10px;
     padding: 10px 10px 10px 10px;;
@@ -246,6 +246,21 @@
     color: #fff;
     transition: 0.5s;
 }
+#about .content .about_txt .notion {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: #333;
+    font-size: 1.2em;
+    margin: 10px 0 0 20px;
+}
+#about .content .about_txt .notion:hover {
+    background-color: #333;
+    color: #fff;
+    transition: 0.5s;
+}
 #about .content .about_txt .info {
     display: flex;
 }
@@ -262,7 +277,7 @@
 }
 #project .project h1 {
     /* padding: 90px 0; */
-    font-size: 3em;
+    font-size: 3.5em;
     font-weight: 600;
     display: block;
     text-align: center;
@@ -351,9 +366,21 @@
     color: #fff;
     transition: 0.5s;
 }
+#project .project .web .content-left .link .demo-site {
+    border: 1px solid #333;
+    color: #333;
+}
+#project .project .web .content-left .link .demo-site:hover {
+    background-color: #333;
+    color: #fff;
+    transition: 0.5s;
+}
 #project .project .web .img {
-    padding-left: 20px;
-    margin-top: 300px;
+    padding-left: 100px;
+    margin-top: 250px;
+}
+#project .project .web .img3 {
+    margin-left: 50px;
 }
 .footer__copyright__text {
     margin-top: 100px;
@@ -362,6 +389,7 @@
     color: #fff;
     text-align: center;
 }
+
 /*
 #project .project .web .img > img {
     width: 900px;
@@ -369,7 +397,7 @@
 */
 /* // Project Section */
 /* responsive */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1580px) {
     .navBar .menu-hamburger {
         font-size: 2em;
         display: block;
@@ -477,13 +505,18 @@
     #about .content .about_txt .tool {
         font-size: 0.8em;
         padding-bottom: 10px;
+        text-align: center;
+        margin: auto;
+
     }
     #about .content .about_txt .tool h2 {
         color: #A435F0;
         margin: 0 0 5px 10px;
     }
     #about .content .about_txt .tool ul {
-        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     #about .content .about_txt .tool ul li{
         border-radius: 6px;
@@ -494,22 +527,28 @@
         align-items: center;
     }
     #about .content .about_txt .link {
-        width: 180px;
+        width: 126px;
         height: 50px;
         border: 1px solid #A435F0;
         border-radius: 10px;
         color: #A435F0;
         font-size: 1em;
-        margin-top: 10px;
     }
     #about .content .about_txt .git {
-        width: 180px;
+        width: 126px;
         height: 50px;
         border: 1px solid #3d535f;
         border-radius: 10px;
         color: #3d535f;
         font-size: 1em;
-        margin: 10px 0 0 20px;
+    }
+    #about .content .about_txt .notion {
+        width: 126px;
+        height: 50px;
+        border: 1px solid #333f;
+        border-radius: 10px;
+        color: #333;
+        font-size: 1em;
     }
     /* Project Section */
     #project .project .h1 {
@@ -520,35 +559,35 @@
         display: none;
     }
     #project .project .moblie-project1 {
-        max-width: 70%;
-        width: 1000px;
-        height: 500px;
+        max-width: 100%;
+        width: 700px;
+        height: 420px;
         margin: auto;
-        margin-top: 30px;
+        margin-top: 70px;
         overflow: hidden;
-        background-image: url(/asset/img/sample.jpg);
+        background-image: url(/asset/img/project_1.png);
         background-position: center;
         background-size: cover;
     }
     #project .project .moblie-project2 {
-        max-width: 70%;
-        width: 1000px;
-        height: 500px;
+        max-width: 100%;
+        width: 700px;
+        height: 420px;
         margin: auto;
-        margin-top: 30px;
+        margin-top: 70px;
         overflow: hidden;
-        background-image: url(/asset/img/sample.jpg);
+        background-image: url(/asset/img/project_2.png);
         background-position: center;
         background-size: cover;
     }
     #project .project .moblie-project3 {
-        max-width: 70%;
-        width: 1000px;
-        height: 500px;
+        max-width: 100%;
+        width: 700px;
+        height: 420px;
         margin: auto;
         margin-top: 30px;
         overflow: hidden;
-        background-image: url(/asset/img/sample.jpg);
+        background-image: url(/asset/img/project_3.png);
         background-position: center;
         background-size: cover;
     }
@@ -575,9 +614,38 @@
     }
     #project .project .web .content-left .link {
         display: block;
-        margin-left: 410px;
+        margin-left: 260px;
     } 
-   
- 
-   
+    #project .project .web3 .content-left {
+       padding-left: 0;
+    }
+}
+@media screen and (max-width: 800px) {
+    #project .project .moblie-project1 {
+        max-width: 100%;
+        width: 454px;
+        height: 270px;
+        object-fit: cover;
+    }
+    #project .project .moblie-project2 {
+        max-width: 100%;
+        width: 454px;
+        height: 270px;
+        object-fit: cover;
+    }
+    #project .project .moblie-project3 {
+        max-width: 100%;
+        width: 454px;
+        height: 270px;
+        object-fit: cover;
+    }
+    #project .project .web .content-left ul {
+        display: block;
+        margin: auto;
+        width: 45%;
+    }
+    #project .project .web .content-left .link {
+        display: block;
+        margin-left: 150px;
+    } 
 }
