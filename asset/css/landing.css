@@ -426,6 +426,9 @@ html {
 .contact .contact-img {
     margin: 180px 0 0 100px;
 }
+.contact .contact-mobile-img {
+    display: none;
+}
 /* // contact Section */
 /* responsive */
 @media screen and (max-width: 1580px) {
@@ -653,8 +656,22 @@ html {
     #project .project .web3 .content-left {
        padding-left: 0;
     }
+    #contact .contact .content h2 {
+        font-size: 1.5em;
+    }
+    #contact .contact .content h2 {
+        font-size: 1.3em;
+        margin-left: 30px;
+    }
+    #contact .contact .contact-img img{
+        width: 460px;
+    }
+    #contact .contact .address a,
+    #contact .contact .address p {
+        font-size: 1em;
+    }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     #project .project .moblie-project1 {
         max-width: 100%;
         width: 454px;
@@ -682,4 +699,28 @@ html {
         display: block;
         margin-left: 150px;
     } 
+    .contact .content {
+        display: block;
+        text-align: center;
+    }
+    #contact .contact .address a,
+    #contact .contact .address p {
+        font-size: 0.9em;
+    }
+    .contact .contact-img img {
+       display: none;
+    }
+    .contact .contact-mobile-img {
+        display: block;
+        text-align: center;
+    }
+    .contact .contact-mobile-img img {
+        max-width: 100%;
+        width: 454px;
+        height: 270px;
+        object-fit: cover;
+    }
+    .contact .content h2 {
+        margin: 50px 0 0 0;
+    }
 }
