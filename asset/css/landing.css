@@ -493,7 +493,7 @@ html {
     }
     /* About Section */
     .about h1 {
-        padding: 150px 0 30px 0;
+        padding: 180px 0 30px 0;
      }
     #about .about .modile-profile {
         width: 440px;
@@ -590,7 +590,7 @@ html {
     /* Project Section */
     #project .project .h1 {
         /* padding: 400px 0; */
-        padding-top: 100px;
+        padding-top: 50px;
     }
     #project .project .web .img {
         display: none;
@@ -697,8 +697,14 @@ html {
     }
     #project .project .web .content-left .link {
         display: block;
-        margin-left: 150px;
+        margin-left: 142px;
     } 
+    #project .project .web1 .content-left .link  {
+        margin-left: 160px;
+    }
+    #project .project .web3 .content-left .link  {
+        margin-left: 160px;
+    }
     .contact .content {
         display: block;
         text-align: center;
