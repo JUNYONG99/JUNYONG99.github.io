@@ -50,7 +50,7 @@ html {
     text-transform: capitalize;
 }
 .navBar .sns i {
-    font-size: 28px;
+    font-size: 36px;
     margin-left: 15px;
 }
 .navBar .menu-hamburger {
@@ -384,6 +384,23 @@ html {
 #project .project .web .img3 {
     margin-left: 50px;
 }
+.btns  {
+    position: fixed;
+    float: right;
+    font-size: 3em;
+    right: .5rem;
+    bottom: .5rem;
+    margin: 0 30px 30px 0;
+    color: #3d535f;
+  }
+.btns i:hover  {
+    color: #A435F0;
+    transition: 0.3s;
+}
+.btns a {
+    text-decoration: none;
+    color: #3d535f;
+}
 .footer__copyright__text {
     margin-top: 100px;
     padding: 50px 0 50px 0;
@@ -491,6 +508,9 @@ html {
     .wrapper .cols h1 {
         font-size: 1.8em;
     }
+    .btns  {
+        font-size: 3em;
+      }
     /* About Section */
     .about h1 {
         padding: 180px 0 30px 0;
@@ -672,6 +692,9 @@ html {
     }
 }
 @media screen and (max-width: 900px) {
+    .btns  {
+        font-size: 2.4em;
+      }
     #project .project .moblie-project1 {
         max-width: 100%;
         width: 454px;
