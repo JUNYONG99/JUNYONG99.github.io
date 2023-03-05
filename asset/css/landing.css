@@ -559,7 +559,7 @@ html {
         padding-bottom: 10px;
     }
     #about .content .about_txt .tool {
-        font-size: 0.8em;
+        font-size: 0.75em;
         padding-bottom: 10px;
         text-align: center;
         margin: auto;
@@ -641,7 +641,7 @@ html {
         width: 700px;
         height: 420px;
         margin: auto;
-        margin-top: 30px;
+        margin-top: 70px;
         overflow: hidden;
         background-image: url(/asset/img/project_3.png);
         background-position: center;
