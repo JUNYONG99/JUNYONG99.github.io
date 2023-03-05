@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300,400,500,600,700,800,900&display=swap");
 * {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 html {
     scroll-behavior: smooth;
@@ -114,6 +113,7 @@ html {
     display: block;
     position: relative;
     font-size: 45px;
+    font-weight: 900;
     letter-spacing: 5px;
     text-transform: uppercase;
     color: #3d535f;
@@ -129,8 +129,7 @@ html {
 .wrapper .cols h1 {
     display: block;
     position: absolute;
-    font-size: 3em;
-    font-weight: 900;
+    font-size: 2em;
     color:#3d535f;
 }
 .multiText {
@@ -169,7 +168,7 @@ html {
     height: 550px;
     margin-right: 100px;
     overflow: hidden;
-    background-image: url(/asset/img/image_1.png);
+    background-image: url(/asset/img/about_profile.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -513,14 +512,14 @@ html {
       }
     /* About Section */
     .about h1 {
-        padding: 180px 0 30px 0;
+        padding: 180px 0 50px 0;
      }
     #about .about .modile-profile {
         width: 440px;
         height: 550px;
         margin: auto;
         overflow: hidden;
-        background-image: url(/asset/img/image_1.png);
+        background-image: url(/asset/img/about_profile.jpg);
         background-position: center;
         background-size: cover;
     }
@@ -556,7 +555,7 @@ html {
         justify-content: center;
         align-items: center;
         padding: 10px;
-        font-size: 1.05em;
+        font-size: 1em;
         padding-bottom: 10px;
     }
     #about .content .about_txt .tool {
@@ -680,11 +679,12 @@ html {
         font-size: 1.5em;
     }
     #contact .contact .content h2 {
-        font-size: 1.3em;
+        font-size: 1.2em;
         margin-left: 30px;
     }
     #contact .contact .contact-img img{
-        width: 460px;
+        width: 500px;
+        height: 300px;
     }
     #contact .contact .address a,
     #contact .contact .address p {
@@ -720,13 +720,13 @@ html {
     }
     #project .project .web .content-left .link {
         display: block;
-        margin-left: 142px;
+        margin-left: 138px;
     } 
     #project .project .web1 .content-left .link  {
-        margin-left: 160px;
+        margin-left: 138px;
     }
     #project .project .web3 .content-left .link  {
-        margin-left: 160px;
+        margin-left: 138px;
     }
     .contact .content {
         display: block;
@@ -751,5 +751,12 @@ html {
     }
     .contact .content h2 {
         margin: 50px 0 0 0;
+    }
+    .wrapper .cols h1 {
+        font-size: 1.4em;
+    }
+    
+    #project .project .web .content-left dd {
+        font-size: 0.8em;
     }
 }
