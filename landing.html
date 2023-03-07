@@ -36,6 +36,7 @@
             </div>
             <i class="fa-solid fa-bars menu-hamburger"></i>
         </nav>
+        
         <div class="wrapper">
             <div class="cols">
                 <span class="topLine">WEB DEVELOPER</span><br>
@@ -48,7 +49,12 @@
                 <div class="moveTopBtn"><i class="fa-solid fa-circle-up"></i></div>
             </div>
         </div>
-
+        <div class="cover cover-1">
+            <p class="first-parallel"></p>
+        </div>
+        <div class="cover cover-2">
+            <p class="second-parallel"></p>
+        </div>
         <!-- About Section -->
 
         <section id="about">
@@ -117,7 +123,7 @@
             <div class="project">
                 <h1 class="h1"><span>project</span></h1>
                 <div class="web web1">
-                    <div class="content-left">
+                    <div class="content-left content1">
                         <div class="moblie-project1"></div>
                         <h1>01 WEB</h1>
                         <dl>
@@ -150,7 +156,7 @@
                     <div class="img img1"><img src="/asset/img/project_1.png" alt="" width="780px"></div>
                 </div>
                 <div class="web web2">
-                    <div class="content-left">
+                    <div class="content-left content2">
                         <div class="moblie-project2"></div>
                         <h1>02 WEB</h1>
                         <dl>
@@ -183,7 +189,7 @@
                     <div class="img img2"><img src="/asset/img/project_2.png" alt="" width="780px"></div>
                 </div>
                 <div class="web web3">
-                    <div class="content-left">
+                    <div class="content-left content3">
                         <div class="moblie-project3"></div>
                         <h1>03 WEB</h1>
                         <dl>
@@ -311,7 +317,51 @@
         $topBtn.onclick = () => {
             window.scrollTo({ top: 0, behavior: "smooth" });
         }
-    </script>
-</body>
 
+        const pTag1 = document.querySelector('.first-parallel');
+        const pTag2 = document.querySelector('.second-parallel');
+
+        const textArr1 = 'My name is Lee Jun Yong  I will strive to be a developer who can create ‘new things’'.split(' ');
+        const textArr2 = 'Now, I would like to introduce myself and my project  Please sit back and enjoy!'.split(' ');
+
+        function initTexts(element, textArray) {
+            textArray.push(...textArray);
+            for(let i = 0; i < textArray.length; i++) {
+                element.innerText += `${textArray[i]}\u00A0\u00A0\u00A0\u00A0`;
+            }
+        }
+        initTexts(pTag1, textArr1);
+        initTexts(pTag2, textArr2);
+
+        let count1 = 0;
+        let count2 = 0;
+
+        function marqueeText(count, element, direction) {
+            if (count > element.scrollWidth / 2) {
+                element.style.transform = `translateX(0)`;
+                count = 0;
+            }
+            element.style.transform = `translateX(${count * direction}px)`;
+            return count;
+        }
+
+        function animate() {
+            count1++;
+            count2++;
+
+            count1 = marqueeText(count1, pTag1, -1);
+            count2 = marqueeText(count2, pTag2, 1);
+
+            window.requestAnimationFrame(animate)
+        }
+
+        animate()
+
+        window.addEventListener('scroll', () => {
+            count1 += 15;
+            count2 += 15;
+        })
+    </script>
+    <script src="./asset/js/landing.js"></script>
+</body>
 </html>
