@@ -184,6 +184,9 @@ html {
     justify-content: center;
     align-items: center;
 }
+.content span {
+    color: #A435F0;
+}
 #about .content .photo {
     width: 450px;
     height: 550px;
