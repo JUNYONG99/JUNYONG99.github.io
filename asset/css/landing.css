@@ -292,6 +292,47 @@ html {
 /* // About Section */
 
 /* Project Section */
+
+/* Project slider */
+.slideshow {
+    overflow: hidden;
+}
+.slideshow_slides {
+    width: 300vw;
+    transition: transform 0.5s;
+}
+.inner {
+   overflow: hidden;
+}
+.slider {
+    width: 300vw;
+    transition: transform 0.5s;
+}
+.web {
+    width: 100vw;
+    float: left;
+}
+.btn {
+    border: none;
+    position: relative;
+    background: none;
+    font-size: 3em;
+    cursor: pointer;
+    margin-top: -32vh;
+}
+.btn i {
+    color: #333;
+}
+.btn_prev {
+    margin-left: 60px;
+    float: left;
+}
+.btn_next {
+    float: right;
+    margin-right: 60px;
+}
+/* // Project slider */
+ 
 #project .project {
     display: block;
     justify-content: center;
@@ -659,6 +700,10 @@ html {
         font-size: 1em;
     }
     /* Project Section */
+    .btn {
+        font-size: 3em;
+        margin-top: -116vh;
+    }
     #project .project .h1 {
         /* padding: 400px 0; */
         padding-top: 50px;
@@ -751,6 +796,11 @@ html {
     .btns  {
         font-size: 2.4em;
       }
+    .btn {
+        font-size: 3em;
+        margin-top: -90vh;
+    }
+    
     #project .project .moblie-project1 {
         max-width: 100%;
         width: 454px;
