@@ -16,12 +16,15 @@ html {
 }
 /* navBar */
 .navBar {
-    position: absolute;
-    padding: 50px;
+    position: fixed;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    background-color: #fff;
+    /* background-color: rgba( 255, 255, 255, 0.5 ); */
+    z-index: 15;
 }
 .navBar a {
     color: #3d535f;
@@ -178,6 +181,7 @@ html {
     padding: 0 5px 0 5px;
     color: #A435F0;
     text-transform: capitalize;
+    
 }
 .content {
     display: flex;
@@ -331,6 +335,24 @@ html {
     float: right;
     margin-right: 60px;
 }
+.indicator {
+    text-align: center;
+
+}
+.indicator button {
+    border: none;
+    cursor: pointer;
+}
+.indicator .indi_bar {
+    width: 70px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+.indicator .active {
+    background: #333;
+}
 /* // Project slider */
  
 #project .project {
@@ -366,7 +388,7 @@ html {
     text-align: left;
 }
 #project .project .web img {
-    opacity: 0;
+    opacity: 1;
 }
 .animate {
     animation: fadeIn 1s forwards ease-in;
@@ -378,7 +400,7 @@ html {
 }
 
 #project .project .web .content-left {
-    opacity: 0;
+    opacity: 1;
 }
 #project .project .web .content-left .tit {
     font-size: 2rem;
@@ -500,6 +522,9 @@ html {
     margin-top: 220px;
     margin-bottom: 50px;
     font-size: 1.8em;
+}
+.contact .content span {
+    font-size: 1.2em;
 }
 .contact .address {
    display: block;
@@ -704,6 +729,9 @@ html {
         font-size: 3em;
         margin-top: -116vh;
     }
+   .indicator {
+        display:none;
+   }
     #project .project .h1 {
         /* padding: 400px 0; */
         padding-top: 50px;

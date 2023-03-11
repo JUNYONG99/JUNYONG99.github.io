@@ -17,7 +17,7 @@
     <!-- custom -->
     <link rel="stylesheet" type="text/css" href="/asset/css/landing.css">
 </head>
-s<body class="body">
+<body class="body">
     <div class="container">
         <nav class="navBar">
             <a href="#" class="logo">jun</a>
@@ -227,6 +227,11 @@ s<body class="body">
                         <button class="btn btn_prev"><i class="fa-solid fa-circle-chevron-left"></i></button>
                         <button class="btn btn_next"><i class="fa-solid fa-circle-chevron-right"></i></button>
                     </div>
+                    <div class="indicator">
+                        <button class="indi_bar ind_1 active"></button>
+                        <button class="indi_bar ind_2"></button>
+                        <button class="indi_bar ind_3"></button>
+                    </div>
                 </div>
 
                 <!-- Contact Section-->
@@ -379,6 +384,7 @@ s<body class="body">
             } else {
                 currentIndex--;
                 document.querySelector('.slider').style.transform = `translate(${-100 * currentIndex}vw)`;
+                indicator_update(currentIndex);
             }
         });
 
@@ -388,9 +394,49 @@ s<body class="body">
                 currentIndex = 0
             }
             document.querySelector('.slider').style.transform = `translate(${-100 * currentIndex}vw)`;
+            indicator_update(currentIndex);
         });
         /* // img slider */
+        /* indicator */
+        document.querySelector('.ind_1').addEventListener('click', () => {
+            currentIndex = 0
+            indicator_update(currentIndex)
+            document.querySelector('.slider').style.transform = 'translate(0vw)';
+        });
+
+        document.querySelector('.ind_2').addEventListener('click', () => {
+            currentIndex = 1
+            indicator_update(currentIndex)
+            document.querySelector('.slider').style.transform = 'translate(-100vw)';
+           
+        });
+
+        document.querySelector('.ind_3').addEventListener('click', () => {
+            currentIndex = 2
+            indicator_update(currentIndex)
+            document.querySelector('.slider').style.transform = 'translate(-200vw)';
+        });
+
+        function indicator_update(index) {
+            if (index == 0) {
+                document.querySelector('.ind_1').classList.add('active');
+                document.querySelector('.ind_2').classList.remove('active');
+                document.querySelector('.ind_3').classList.remove('active');
+            } else if (index == 1) {
+                document.querySelector('.ind_1').classList.remove('active');
+                document.querySelector('.ind_2').classList.add('active');
+                document.querySelector('.ind_3').classList.remove('active');
+            } else if (index == 2) {
+                document.querySelector('.ind_1').classList.remove('active');
+                document.querySelector('.ind_2').classList.remove('active');
+                document.querySelector('.ind_3').classList.add('active');
+            }
+        }
+        /* // indicator */
     </script>
-    <script src="./asset/js/landing.js"></script>
+    <!-- #project .project .web img 
+        #project .project .web .content-left opacity
+        <script src="./asset/js/landing.js"></script>
+     -->
 </body>
 </html>
