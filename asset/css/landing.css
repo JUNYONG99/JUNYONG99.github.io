@@ -194,6 +194,7 @@ html {
 
 .tooltip {
     position: relative;
+    z-index: 1;
   }
 .figma:hover::after {
     content: "";
@@ -266,7 +267,6 @@ html {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
     animation: object1 6s linear infinite;
 }
-
 .jquery:hover::after {
     content: "";
     position: absolute;
@@ -315,7 +315,7 @@ html {
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    width: 100px;
+    width: 140px;
     height: 100px;
     background-image: url(/asset/img/jsp.png);
     background-size: cover;
@@ -343,8 +343,8 @@ html {
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 108px;
     background-image: url(/asset/img/boot.png);
     background-size: cover;
     border-radius: 5px;
@@ -455,7 +455,7 @@ html {
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    width: 100px;
+    width: 160px;
     height: 100px;
     background-image: url(/asset/img/aws.png);
     background-size: cover;
