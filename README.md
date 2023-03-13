@@ -1,13 +1,12 @@
 ## My Portfolio Site
 Responsive web site
-<br>
-
 ![ezgif com-optimize (4)](https://user-images.githubusercontent.com/118879439/224667454-b70e9544-f544-424e-9939-7019da75cd8c.gif)
 ### created By Lee Jun Yong
 <br>
 
 ## Language
 HTML・CSS・Javascript・jQuery
+<br>
 <br>
 
 ## Reference
@@ -18,8 +17,10 @@ HTML・CSS・Javascript・jQuery
 - https://github.com/mattboldt/typed.js/
 
 <br>
+<br>
 
 ## Demo
 https://junyong99.github.io/
 
+<br>
 <br>
