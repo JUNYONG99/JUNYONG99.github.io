@@ -599,6 +599,7 @@ html {
 }
 .btn i {
     color: #333;
+    opacity: 0.9;
 }
 .btn_prev {
     margin-left: 60px;
@@ -699,7 +700,7 @@ html {
     margin: 10px 5px;
     border: 1px solid #333;
     color: #333;
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 5px 10px 5px 10px;;
 }
 #project .project .web .content-left .link {
@@ -824,8 +825,29 @@ html {
 .contact .contact-mobile-img {
     display: none;
 }
+/* text bounding */
+.waviy {
+    padding: 10px 0 10px 0;
+}
+.waviy span {
+    position: relative;
+    display: inline-block;
+    animation: waviy 2.2s infinite;
+    /* css variable */
+    animation-delay: calc(.1s * var(--i));
+}
+@keyframes waviy {
+    0%, 40%, 100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translatey(-20px);
+    }
+}
+/* // text bounding */
 
 /* // contact Section */
+
 /* responsive */
 @media screen and (max-width: 1580px) {
     .wrapper::before {
