@@ -2,9 +2,7 @@
 Responsive web site
 <br>
 
-![image](https://user-images.githubusercontent.com/118879439/223430293-e8150f05-10d5-4f00-a0e7-f7f074754f01.png)
-<br>
-
+![ezgif com-optimize (4)](https://user-images.githubusercontent.com/118879439/224667454-b70e9544-f544-424e-9939-7019da75cd8c.gif)
 ### created By Lee Jun Yong
 <br>
 <br>
