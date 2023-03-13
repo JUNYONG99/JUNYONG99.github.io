@@ -4,12 +4,24 @@ Responsive web site
 
 ![image](https://user-images.githubusercontent.com/118879439/223430293-e8150f05-10d5-4f00-a0e7-f7f074754f01.png)
 <br>
-created By Lee Jun Yong
-<br><br>
+
+### created By Lee Jun Yong
+<br>
+<br>
 
 ## Language
-HTML・CSS・Javascript
+HTML・CSS・Javascript・jQuery
+<br>
+<br>
 
+## Reference
+### YouTude
+- https://www.youtube.com/@OnlineTutorialsYT
+### Javascript
+- https://github.com/Agezao/confetti-js
+- https://github.com/mattboldt/typed.js/
+
+<br>
 <br>
 
 ## Demo
