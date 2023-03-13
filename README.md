@@ -19,7 +19,6 @@ HTML・CSS・Javascript・jQuery
 - https://github.com/mattboldt/typed.js/
 
 <br>
-<br>
 
 ## Demo
 https://junyong99.github.io/
