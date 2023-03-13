@@ -17,6 +17,7 @@
     <!-- custom -->
     <link rel="stylesheet" type="text/css" href="/asset/css/landing.css">
 </head>
+<canvas id="my-canvas"></canvas>
 <body class="body">
     <div class="container">
         <nav class="navBar">
@@ -297,6 +298,7 @@
         integrity="sha512-nO7wgHUoWPYGCNriyGzcFwPSF+bPDOR+NvtOYy2wMcWkrnCNPKBcFEkU80XIN14UVja0Gdnff9EmydyLlOL7mQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- custom js -->
+    <script src="./asset/js/index.min.js"></script>
     <script>
         /* hambuger menu */
         const menuHamburger = document.querySelector('.menu-hamburger');
@@ -453,6 +455,12 @@
             }
         }
         /* // indicator */
+
+        /* confeti Confetti Generator */
+        var confettiSettings = { target: 'my-canvas' };
+        var confetti = new ConfettiGenerator(confettiSettings);
+        confetti.render();
+        /* // confeti Confetti Generator */
     </script>
     <!--
         Project opacity effect

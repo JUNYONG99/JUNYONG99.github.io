@@ -69,6 +69,14 @@ html {
 /* //navBar */
 
 /* introduce */
+#my-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+}
 .wrapper {
     display: flex;
     width: 100%;
@@ -141,10 +149,11 @@ html {
 }
 /* //introduce */
 .cover {
-    width: 100vw;
+    width: 100%;
     margin-bottom: 10rem;
     display: flex;
     color: #f3f5f8;
+    overflow: hidden;
 }
 .cover-1 {
     margin-top: 5vh;
@@ -926,7 +935,7 @@ html {
       }
     /* About Section */
     .about h1 {
-        padding: 180px 0 50px 0;
+        padding: 50px 0 50px 0;
      }
     #about .about .modile-profile {
         width: 440px;
@@ -1100,7 +1109,7 @@ html {
         font-size: 1.5em;
     }
     #contact .contact .content h2 {
-        font-size: 1.2em;
+        font-size: 1.1em;
         margin-left: 30px;
     }
     #contact .contact .contact-img img{
