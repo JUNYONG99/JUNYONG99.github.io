@@ -10,7 +10,6 @@ Responsive web site
 ## Language
 HTML・CSS・Javascript・jQuery
 <br>
-<br>
 
 ## Reference
 ### YouTude
@@ -20,7 +19,8 @@ HTML・CSS・Javascript・jQuery
 - https://github.com/mattboldt/typed.js/
 
 <br>
-<br>
 
 ## Demo
 https://junyong99.github.io/
+
+<br>
