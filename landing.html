@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="/asset/css/landing.css">
 </head>
 <canvas id="my-canvas"></canvas>
+
 <body class="body">
     <div class="container">
         <nav class="navBar">
@@ -260,7 +262,8 @@
                                     <span style="--i:16">け</span>
                                     <span style="--i:17">る</span>
                                 </div>
-                                エンジニア、イ・ジュンヨンになります。」</h2>
+                                エンジニア、イ・ジュンヨンになります。」
+                            </h2>
                             <div class="contact-img"><img src="/asset/img/contact_profile.jpg" alt="" width="600px"
                                     height="400px"></div>
                         </div>
@@ -396,7 +399,12 @@
         window.addEventListener('scroll', () => {
             count1 += 15;
             count2 += 15;
-            document.querySelector('.navBar').style.backgroundColor = "#fff";
+            if (window.scrollY > 100) { 
+                document.querySelector('.navBar').style.backgroundColor = "#fff";
+              } else {
+                document.querySelector('.navBar').style.backgroundColor = "";
+              }
+            
         })
 
         /* img slider */
@@ -431,7 +439,7 @@
             currentIndex = 1
             indicator_update(currentIndex)
             document.querySelector('.slider').style.transform = 'translate(-100vw)';
-           
+
         });
 
         document.querySelector('.ind_3').addEventListener('click', () => {
@@ -473,4 +481,5 @@
         <script src="./asset/js/landing.js"></script>
      -->
 </body>
+
 </html>
