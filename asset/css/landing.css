@@ -24,7 +24,7 @@ html {
     width: 100%;
     background-color: #fff;
     /* background-color: rgba( 255, 255, 255, 0.5 ); */
-    z-index: 15;
+    z-index: 5;
 }
 .navBar a {
     color: #3d535f;
@@ -105,6 +105,7 @@ html {
     border-radius: 50%;
     left: 35%;
     top: 12%;
+    margin-top: 20px;
     background: linear-gradient(45deg, #A435F0, pink);
     animation: object2 6s linear infinite;
 }
