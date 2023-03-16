@@ -481,7 +481,12 @@ html {
     background-position: center;
     background-size: cover;
 }
-
+#about .content .photo {
+    transition: all 0.2s linear;
+}
+#about .content .photo:hover {
+    transform: scale(1.2);
+}
 #about .content .about_txt .work {
     display: flex;
     font-size: 2.5em;
@@ -673,6 +678,12 @@ html {
 #project .project .web img {
     opacity: 1;
 }
+#project .project .web img {
+    transition: all 0.2s linear;
+}
+#project .project .web img:hover {
+    transform: scale(1.1);
+}
 .animate {
     animation: fadeIn 1s forwards ease-in;
     transition: 2s ease-in-out;
@@ -833,6 +844,12 @@ html {
 }
 .contact .contact-mobile-img {
     display: none;
+}
+.contact .contact-img {
+    transition: all 0.2s linear;
+}
+.contact .contact-img:hover {
+    transform: scale(1.1);
 }
 /* text bounding */
 .waviy {
