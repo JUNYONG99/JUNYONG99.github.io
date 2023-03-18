@@ -60,7 +60,14 @@
 
         <section id="about">
             <div class="about">
-                <h1><span>about me</span></h1>
+                <div class="sub_title">
+                    <h1>System<span style="color:white;">.<span style="color:#e06c75;">out</span>.</span><span
+                            style="color:#61afef;">println </span>("</h1>
+                    <div class="string">
+                        <h1 class="greeting en">About Me</h1>
+                    </div>
+                    <h1 class="closure">");</h1>
+                </div>
                 <div class="modile-profile"></div>
                 <div class="content">
                     <div class="photo">
@@ -122,7 +129,14 @@
         <!-- Project Section -->
         <section id="project">
             <div class="project">
-                <h1 class="h1"><span>project</span></h1>
+                <div class="title_project">
+                    <h1>System<span style="color:white;">.<span style="color:#e06c75;">out</span>.</span><span
+                            style="color:#61afef;">println </span>("</h1>
+                    <div class="string">
+                        <h1 class="greeting en">Project</h1>
+                    </div>
+                    <h1 class="closure">");</h1>
+                </div>
                 <div class="inner">
                     <div class="slider">
                         <div class="web web1">
@@ -239,7 +253,14 @@
                 <!-- Contact Section-->
                 <section id="contact">
                     <div class="contact">
-                        <h1 class="h1"><span>Contact</span></h1>
+                        <div class="contact_title">
+                            <h1>System<span style="color:white;">.<span style="color:#e06c75;">out</span>.</span><span
+                                    style="color:#61afef;">println </span>("</h1>
+                            <div class="string">
+                                <h1 class="greeting en">Contact</h1>
+                            </div>
+                            <h1 class="closure">");</h1>
+                        </div>
                         <div class="content">
                             <h2>「 常に挑戦し、 ユーザーに<br>
                                 <div class="waviy">
@@ -328,8 +349,8 @@
             typeSpeed: 80,
             backSpeed: 60,
             backDelay: 1500
-        })
-
+        });
+      
         /* copyToClipboard */
         const copyToClipboard = (text) => {
             const elem = document.createElement('textarea');
@@ -399,11 +420,11 @@
         window.addEventListener('scroll', () => {
             count1 += 15;
             count2 += 15;
-            if (window.scrollY > 50) { 
+            if (window.scrollY > 50) {
                 document.querySelector('.navBar').style.backgroundColor = "#fff";
-              } else {
+            } else {
                 document.querySelector('.navBar').style.backgroundColor = "";
-              }
+            }
         })
 
         /* img slider */
@@ -427,7 +448,7 @@
             indicator_update(currentIndex);
         });
         /* // img slider */
-        
+
         /* indicator */
         document.querySelector('.ind_1').addEventListener('click', () => {
             currentIndex = 0
@@ -453,14 +474,22 @@
                 document.querySelector('.ind_1').classList.add('active');
                 document.querySelector('.ind_2').classList.remove('active');
                 document.querySelector('.ind_3').classList.remove('active');
+
+                document.querySelector('.title_project .en').innerText = "Tasty"
+                document.querySelector('.title_project .en').style.color = "#fa8231";
+                
             } else if (index == 1) {
                 document.querySelector('.ind_1').classList.remove('active');
                 document.querySelector('.ind_2').classList.add('active');
                 document.querySelector('.ind_3').classList.remove('active');
+                document.querySelector('.title_project .en').innerText = "CM"
+                document.querySelector('.title_project .en').style.color = "#477EFF";
             } else if (index == 2) {
                 document.querySelector('.ind_1').classList.remove('active');
                 document.querySelector('.ind_2').classList.remove('active');
                 document.querySelector('.ind_3').classList.add('active');
+                document.querySelector('.title_project .en').innerText = "Lucy"
+                document.querySelector('.title_project .en').style.color = "#63EED5";
             }
         }
         /* // indicator */

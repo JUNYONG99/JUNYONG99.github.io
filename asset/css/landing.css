@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -172,6 +173,41 @@ html {
     font-size: 2.8rem;
 }
 /* About Section */
+.sub_title {
+    padding-top: 120px;
+    margin-bottom: 120px;
+    font-size: 1.5vmin;
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e4bb68;
+    text-align: center;
+}
+.string {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+.string h1 {
+    font-family: JetBrains Mono, monospace;
+}
+  .greeting {
+    top: 8.6vmin;
+  }
+  .en {
+    color: #fa8231;
+  }
+  .es {
+    color: white;
+  }
+  .de {
+    color: #c678dd;
+  }
+  .it {
+    color: #a9b0bd;
+  }
 .about {
     display: block;
     width: 100%;
@@ -189,8 +225,8 @@ html {
 .about h1 span {
     padding: 0 5px 0 5px;
     color: #A435F0;
-    text-transform: capitalize;
-    
+    font-family: JetBrains Mono, monospace;
+    letter-spacing: 3px;
 }
 .content {
     display: flex;
@@ -625,7 +661,6 @@ html {
 }
 .indicator {
     text-align: center;
-
 }
 .indicator button {
     border: none;
@@ -642,7 +677,17 @@ html {
     background: #333;
 }
 /* // Project slider */
- 
+.project .title_project {
+    margin-top: 170px;
+    font-size: 1.5vmin;
+    height: 3vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e4bb68;
+    text-align: center;
+}
 #project .project {
     display: block;
     justify-content: center;
@@ -657,12 +702,13 @@ html {
     font-weight: 600;
     display: block;
     text-align: center;
-    margin-top: 300px
+    margin-top: 200px;
 }
 #project .project h1 span {
     padding: 0 5px 0 5px;
     color: #A435F0;
-    text-transform: capitalize;
+    font-family: JetBrains Mono, monospace;
+    letter-spacing: 3px;
 }
 #project .project .web {
     display: flex;
@@ -870,6 +916,17 @@ html {
         transform: translatey(-20px);
     }
 }
+.contact_title {
+    padding-top: 200px;
+    font-size: 1.5vmin;
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e4bb68;
+    text-align: center;
+}
 /* // text bounding */
 
 /* // contact Section */
@@ -948,7 +1005,7 @@ html {
         font-size: 1.6em;
     }
     .btns  {
-        font-size: 3em;
+        font-size: 2.4em;
       }
     /* About Section */
     .about h1 {
@@ -1054,6 +1111,9 @@ html {
    .indicator {
         display:none;
    }
+   .project .title_project {
+     margin-bottom: 50px;
+    }
     #project .project .h1 {
         /* padding: 400px 0; */
         padding-top: 50px;
@@ -1137,6 +1197,12 @@ html {
     #contact .contact .address p {
         font-size: 1em;
     }
+    #contact .sub_title h1 {
+        margin-top: 300px;
+    }
+    .contact_title {
+        padding-top: 100px;
+    }
 }
 @media screen and (max-width: 900px) {
     .cover p {
@@ -1151,7 +1217,15 @@ html {
         margin-top: -150vh;
     }
    
-    
+    .sub_title {
+        font-size: 1.2vmin;
+    }
+    .contact_title {
+        margin-bottom: 100px;
+    }
+    #project .project h1 {
+        font-size: 2.7em;
+    }
     #project .project .moblie-project1 {
         max-width: 100%;
         width: 454px;
@@ -1232,5 +1306,15 @@ html {
     .wrapper::after {
         height: 100px;
         width: 100px;
+    }
+    .sub_title {
+        padding-top: 0;
+        margin-bottom: 80px;
+    }
+    .project .title_project {
+        margin-top: 140px;
+    } 
+    .contact_title {
+        padding-top: 0;
     }
 }
