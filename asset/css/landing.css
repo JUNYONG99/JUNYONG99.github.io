@@ -646,6 +646,7 @@ html {
     font-size: 3em;
     cursor: pointer;
     margin-top: -384px;
+    height: 100%;
 }
 .btn i {
     color: #333;
