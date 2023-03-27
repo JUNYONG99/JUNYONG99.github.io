@@ -176,7 +176,6 @@ html {
 .sub_title {
     padding-top: 120px;
     margin-bottom: 120px;
-    font-size: 1.5vmin;
     height: 5vh;
     width: 100%;
     display: flex;
@@ -217,7 +216,7 @@ html {
 }
 .about h1 {
     padding: 150px 0 194px 0;
-    font-size: 3.5em;
+    font-size: 3.2em;
     font-weight: 600;
     display: block;
     text-align: center;
@@ -680,7 +679,6 @@ html {
 /* // Project slider */
 .project .title_project {
     margin-top: 170px;
-    font-size: 1.5vmin;
     height: 3vh;
     width: 100%;
     display: flex;
@@ -699,7 +697,7 @@ html {
 }
 #project .project h1 {
     /* padding: 90px 0; */
-    font-size: 3.5em;
+    font-size: 3.2em;
     font-weight: 600;
     display: block;
     text-align: center;
@@ -919,7 +917,7 @@ html {
 }
 .contact_title {
     padding-top: 200px;
-    font-size: 1.5vmin;
+    padding-bottom: 30px;
     height: 5vh;
     width: 100%;
     display: flex;
@@ -928,6 +926,7 @@ html {
     color: #e4bb68;
     text-align: center;
 }
+
 /* // text bounding */
 
 /* // contact Section */
@@ -1205,7 +1204,7 @@ html {
         padding-top: 100px;
     }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1050px) {
     .cover p {
         padding: 1.5rem 0;
         font-size: 1.5rem;
@@ -1217,15 +1216,14 @@ html {
         font-size: 3em;
         margin-top: -1270px;
     }
-   
-    .sub_title {
-        font-size: 1.2vmin;
-    }
     .contact_title {
         margin-bottom: 100px;
     }
+    .about h1 {
+        font-size: 2em;
+    }
     #project .project h1 {
-        font-size: 2.7em;
+        font-size: 2em;
     }
     #project .project .moblie-project1 {
         max-width: 100%;
@@ -1292,7 +1290,13 @@ html {
         font-size: 0.8em;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
+    .about h1 {
+        font-size: 1.4em;
+    }
+    #project .project h1 {
+        font-size: 1.4em;
+    }
     .btn {
         font-size: 2.8em;
     }
