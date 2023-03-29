@@ -158,7 +158,7 @@ html {
   border-inline-color: transparent;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 2.2s linear infinite;
+  animation: textclip 2.3s linear infinite;
   font-size: 4em;
 }
 @keyframes textclip {
