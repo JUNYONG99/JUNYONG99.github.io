@@ -87,7 +87,7 @@
                             WEBエンジニアになりたいと思っています。
                         </p>
                         <p class="contens">
-                            23.01 | ビッグデータ分析の専門家養成コース修了 ( 22.06 - 23.01 )<br>
+                            23.01 | ビッグデータ分析の専門家養成コース修了( 22.06 - 23.01 )<br>
                             23.02 | 新旧専門大学情報メディア学部ソフトウェア科卒業<br>
                             22.12 | 日本のITエンジニア育成プログラムに参加中( 22.12 - 23.06 )<br>
                         </p>
@@ -300,7 +300,7 @@
                         <div class="address">
                             <a href="#" class="copy-text"><i class="fa-solid fa-envelope"></i> aapp76sun@gmail.com
                             </a>&emsp;
-                            <a href="#" class="copy-text"><i class="fa-solid fa-phone"></i> +82 010-7371-6400 </a>
+                            <a href="#" class="copy-text"><i class="fa-solid fa-phone"></i> +82 10-7371-6400 </a>
                             <p><i class="fa-regular fa-clipboard"></i> クリックするとクリップボードにコピーします。</p>
                         </div>
                     </div>
@@ -347,6 +347,7 @@
             navLinks.classList.remove('mobile-menu');
             menuHamburger.classList.remove('mobile-hamburger');
         })
+        /* // hambuger menu */
 
         /* multiText */
         var typingEffect = new Typed('.multiText', {
@@ -356,6 +357,7 @@
             backSpeed: 60,
             backDelay: 1500
         });
+        /* // multiText */
       
         /* copyToClipboard */
         const copyToClipboard = (text) => {
@@ -376,6 +378,7 @@
                 copyToClipboard(text);
             });
         });
+        /* // copyToClipboard */
 
         /* move to top */
         const $topBtn = document.querySelector(".moveTopBtn");
@@ -383,7 +386,9 @@
         $topBtn.onclick = () => {
             window.scrollTo({ top: 0, behavior: "smooth" });
         }
+        /* // move to top */
 
+        /* move to cover */
         const pTag1 = document.querySelector('.first-parallel');
         const pTag2 = document.querySelector('.second-parallel');
 
@@ -432,6 +437,7 @@
                 document.querySelector('.navBar').style.backgroundColor = "";
             }
         })
+        /* // move to cover */
 
         /* img slider */
         let currentIndex = 0;
@@ -506,15 +512,5 @@
         confetti.render();
         /* // confeti Confetti Generator */
     </script>
-    <!--
-        Project opacity effect
-        >>css
-        #project .project .web img 
-        #project .project .web .content-left opacity
-        
-        >>js
-        <script src="./asset/js/landing.js"></script>
-     -->
 </body>
-
 </html>
