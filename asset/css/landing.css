@@ -961,6 +961,9 @@ html {
 
 /* responsive */
 @media screen and (max-width: 1580px) {
+    .navBar .logo {
+        font-size: 2.2em;
+    }
     .wrapper::before {
         height: 500px;
         width: 500px;
@@ -1319,6 +1322,9 @@ html {
     }
 }
 @media screen and (max-width: 700px) {
+    .navBar .logo {
+        font-size: 2em;
+    }
     .about h1 {
         font-size: 1.4em;
     }
